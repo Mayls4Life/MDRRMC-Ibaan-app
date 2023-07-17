@@ -1,0 +1,7 @@
+{
+  "name": "ndrrmc-ibaan-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

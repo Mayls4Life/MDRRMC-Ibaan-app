@@ -1,0 +1,79 @@
+.custom-header {
+    --ion-background-color: #3164f4;
+    --ion-text-color: #fff;
+  }
+
+/* Center the form on the screen */
+.ion-padding {
+    height: 74vh;
+    width: 100%;
+    max-width: 500px;
+    background: #1a191969;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border-top-left-radius: 46px;
+    border-top-right-radius:46px;
+  }
+  
+  /* Style the form container */
+  .form-input {
+    max-width: 650px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  
+  /* Style the form input fields */
+  .form-input ion-item {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  
+  /* Style the submit button */
+  .form-input ion-button {
+    margin-top: 30px;
+    --ion-text-color: #fff;
+    --ion-background-color: #007bff;
+  }
+  
+  /* Style the attach file button */
+  .form-input ion-button p {
+    margin: 0px;
+  }
+  
+  /* Style the radio buttons */
+  .form-input ion-radio {
+    margin-bottom: 0px;
+    ion-item::part(native){
+    padding-left: 0;
+    }
+
+  }
+  
+  /* Style the radio button labels */
+  .form-input ion-radio ion-label {
+    margin-left: 5px;
+  }
+
+/* Set the ion-col to display as a flex container */
+ion-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Set the ion-lists to be 50% width to create two columns */
+ion-list {
+  width: 50%;
+  height: 50%;
+}
+
+/* Adjust the radio button styles */
+ion-radio {
+  margin-bottom: 5px;
+}
+
+  
