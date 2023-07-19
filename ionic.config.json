@@ -1,0 +1,7 @@
+{
+  "name": "MuniResponse",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
