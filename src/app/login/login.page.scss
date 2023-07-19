@@ -1,0 +1,15 @@
+.login__section {
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  .login__container {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    ion-input {
+      margin-bottom: 20px;
+    }
+  }
+}

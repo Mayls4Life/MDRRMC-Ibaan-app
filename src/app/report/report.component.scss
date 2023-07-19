@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid black;
+  padding: 1rem;
+  height: 100%;
+  background: #eeeeee;
+  ion-select,
+  ion-textarea {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.earthquake-bg {
+  background-color: red;
+}
+
+.hurricane-bg {
+  background-color: blue;
+}
+
+.flood-bg {
+  background-color: yellow;
+}
+
+.wildfire-bg {
+  background-color: orange;
+}

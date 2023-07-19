@@ -1,0 +1,33 @@
+<div
+  class="container"
+  [ngClass]="{
+    'earthquake-bg': selectedDisaster === 'earthquake',
+    'hurricane-bg': selectedDisaster === 'hurricane',
+    'flood-bg': selectedDisaster === 'flood',
+    'wildfire-bg': selectedDisaster === 'wildfire'
+  }"
+>
+  <ion-select
+    [(ngModel)]="selectedDisaster"
+    interface="popover"
+    placeholder="Select natural disaster"
+    label="Disaster"
+    labelPlacement="floating"
+    required
+  >
+    <ion-select-option value="earthquake">Earthquake</ion-select-option>
+    <ion-select-option value="hurricane">Hurricane</ion-select-option>
+    <ion-select-option value="flood">Flood</ion-select-option>
+    <ion-select-option value="wildfire">Wildfire</ion-select-option>
+  </ion-select>
+
+  <ion-textarea
+    label="Description"
+    [(ngModel)]="description"
+    placeholder="Enter description"
+    labelPlacement="floating"
+    required
+  ></ion-textarea>
+  <input type="file" (change)="getFile($event)" />
+  <input type="button" value="Attach image" (click)="submitData()" />
+</div>
