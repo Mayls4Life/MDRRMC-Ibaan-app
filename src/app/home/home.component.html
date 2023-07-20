@@ -1,0 +1,55 @@
+<div class="tabs">
+  <ion-segment (ionChange)="onSegmentChange($event)" value="reports">
+    <ion-segment-button value="reports">
+      <ion-label>Reports</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="announcements">
+      <ion-label>Announcements</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div class="container">
+  <div class="content">
+    <!-- Reports Section -->
+    <div *ngIf="selectedValue === 'reports'">
+      <ng-container *ngFor="let barangay of barangays">
+        <ng-container *ngIf="barangay.reports.length > 0">
+          <div *ngFor="let report of barangay.reports">
+            <ion-card>
+              <img alt="Silhouette of mountains" src="{{ report.image }}" />
+              <ion-card-header>
+                <ion-card-title>{{ barangay.barangay }}</ion-card-title>
+                <ion-card-subtitle>{{ report.date }}</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                <p class="distaster">
+                  {{ report.disaster }}
+                </p>
+                <p>
+                  {{ report.description }}
+                </p>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+
+    <!-- Announcements Section -->
+    <div *ngIf="selectedValue === 'announcements'">
+      <ng-container *ngFor="let announcement of announcements">
+        <ng-container *ngIf="announcements.length > 0">
+          <ion-card>
+            <img alt="Silhouette of mountains" src="{{ announcement.image }}" />
+            <ion-card-header>
+              <ion-card-title>{{ announcement.subject }}</ion-card-title>
+              <ion-card-subtitle>{{ announcement.date }}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>{{ announcement.description }} </ion-card-content>
+          </ion-card>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <section class="login__section">
+    <div class="login__container">
+      <h3 class="welcome__text">Welcome Ibaeno's</h3>
+      <p class="signin__text">Sign in to continue</p>
+      <h1 class="title">MDRRMC IBAAN</h1>
+      <div class="error">{{error }}</div>
+      <ion-input
+        label="Email address"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter email address"
+        [(ngModel)]="email"
+      ></ion-input>
+      <ion-input
+        label="Password"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter password"
+        [(ngModel)]="password" type="password"
+      ></ion-input>
+      <ion-button expand="full" (click)="login()">Login</ion-button>
+    </div>
+  </section>
+</ion-content>

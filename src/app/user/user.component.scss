@@ -1,0 +1,49 @@
+/* Your component's .scss file */
+
+.container {
+  padding: 1rem;
+  min-height: 100%;
+  background: #c5dff8;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h2 {
+    text-align: center;
+  }
+}
+
+.earthquake-bg {
+  background-color: red;
+}
+
+.hurricane-bg {
+  background-color: blue;
+}
+
+.flood-bg {
+  background-color: yellow;
+}
+
+.wildfire-bg {
+  background-color: orange;
+}
+
+.content {
+  padding: 1rem;
+}

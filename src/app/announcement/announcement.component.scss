@@ -1,0 +1,110 @@
+/* Your component's .scss file */
+
+.container {
+  padding: 1rem;
+  min-height: 100%;
+  background: #c5dff8;
+}
+
+ion-select,
+ion-textarea,
+ion-searchbar {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  --background: #fff;
+}
+
+ion-searchbar {
+  padding: 15px 10px !important;
+}
+
+ion-card {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+ion-card-content {
+  .distaster {
+    font-size: 26px;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+ion-card-title {
+  font-size: 1rem;
+}
+
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h2 {
+    text-align: center;
+  }
+}
+
+.earthquake-bg {
+  background-color: red;
+}
+
+.hurricane-bg {
+  background-color: blue;
+}
+
+.flood-bg {
+  background-color: yellow;
+}
+
+.wildfire-bg {
+  background-color: orange;
+}
+
+.disaster-select {
+  width: 100%;
+}
+
+.description-textarea {
+  width: 100%;
+}
+
+.file-input-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.custom-file-input {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.custom-file-input input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input-container span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-button {
+  margin-top: 20px;
+}

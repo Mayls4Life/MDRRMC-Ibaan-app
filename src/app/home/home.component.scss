@@ -1,0 +1,35 @@
+ion-segment-button {
+  padding: 10px;
+  ion-label {
+    font-size: 16px !important;
+  }
+}
+.container {
+  background-color: #c5dff8;
+  height: 94%;
+  overflow: auto;
+  padding: 1rem;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    ion-card {
+      border: 1px solid rgba(0, 0, 0, 0.75);
+      ion-card-content {
+        .distaster {
+          font-size: 26px;
+          text-transform: capitalize;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    ion-card-title {
+      font-size: 1rem;
+    }
+  }
+}
