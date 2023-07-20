@@ -108,3 +108,14 @@ ion-card-title {
 .submit-button {
   margin-top: 20px;
 }
+
+/* Add this CSS to your component's styleUrls or your global styles */
+
+.password-container {
+  display: flex;
+  align-items: center; /* To vertically align the button and input */
+}
+
+.show-password-btn {
+  margin-left: 8px; /* Adjust this value to set the desired distance between the input and the button */
+}

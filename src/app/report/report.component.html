@@ -17,7 +17,7 @@
           <ion-icon name="add-circle-outline"></ion-icon>&nbsp; File Report
         </ion-button>
       </div>
-      <ng-container *ngFor="let barangay of barangays">
+      <ng-container *ngFor="let barangay of barangays.reverse()">
         <ng-container *ngIf="barangay.reports.length > 0">
           <div *ngFor="let report of barangay.reports">
             <ion-card>
@@ -35,7 +35,9 @@
                 </p>
               </ion-card-content>
 
-              <ion-button (click)="deleteReport(barangay, report)" expand="full "
+              <ion-button
+                (click)="deleteReport(barangay, report)"
+                expand="full "
                 >Delete</ion-button
               >
             </ion-card>

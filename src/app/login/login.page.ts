@@ -36,10 +36,21 @@ export class LoginPage implements OnInit {
       ) {
         localStorage.setItem('user', 'admin');
         this.router.navigate(['/folder/home']);
+      } else {
+        this.error = 'Incorrect email or password';
       }
     } else {
       this.error = 'Fill out missing values';
     }
     console.log(this.error);
+  }
+
+  showPassword: boolean = false; // Initialize the variable as false
+
+  // Other methods for login, etc.
+
+  // Method to toggle the showPassword variable
+  toggleShowPassword() {
+    this.showPassword = !this.showPassword;
   }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { DatabaseService } from './service/database.service';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,9 @@ export class AppComponent {
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   isLoginPage: boolean = false;
+  email: string = '';
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private database: DatabaseService) {
     this.subscribeToRouterEvents();
   }
 
@@ -24,6 +26,18 @@ export class AppComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.checkLoginPage();
+        for (let i = 0; i < this.database.barangay.length; i++) {
+          if (
+            this.database.barangay[i].barangay === localStorage.getItem('user')
+          ) {
+            this.email = this.database.barangay[i].email;
+            break;
+          }
+        }
+
+        if (this.database.admin.user === localStorage.getItem('user')) {
+          this.email = this.database.admin.email;
+        }
       }
     });
   }

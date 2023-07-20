@@ -45,11 +45,11 @@ export class DatabaseService {
       barangay: 'Barangay 7 ',
       email: 'barangay7@gmail.com',
       password: 'barangay7',
-      reports: [
+      reports: [    
         {
           disaster: 'eathquake',
           description: 'lorem ipsum',
-          image: '../../assets/uploads/Screenshot 2023-07-16 192720.png',
+          image: '../../assets/uploads/eqsample.jpg',
           date: new Date(),
         },
       ],
@@ -74,18 +74,11 @@ export class DatabaseService {
     },
   ];
 
-  public announcement: any = [
-    {
-      subject: 'Earthquake drill',
-      description: 'lorem ipsum dolor este',
-      image: '../../assets/uploads/jug.jpg',
-      date: new Date(),
-    },
-  ];
+  public announcement: any = [];
 
   public admin = {
-    user: 'barangay',
-    email: 'admin@example.com',
+    user: 'admin',
+    email: 'admin@gmail.com',
     password: 'admin@password',
   };
   constructor() {}
